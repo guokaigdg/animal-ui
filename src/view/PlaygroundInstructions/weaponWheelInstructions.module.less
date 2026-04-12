@@ -1,0 +1,396 @@
+// WeaponWheelInstructions Styles
+// Based on Animal Crossing UI Kit - Weapon Wheel design
+
+// ============================================
+// Main Container
+// ============================================
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 9773px;
+  min-height: 2445px;
+  margin: 0 auto;
+  background-color: #f5f5f5;
+}
+
+// ============================================
+// Left Section (Yellow Panel)
+// ============================================
+.leftSection {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2350.78px;
+  height: 2445px;
+  background-color: rgba(255, 225, 117, 1);
+}
+
+.leftPanel {
+  position: absolute;
+  top: 740.28px;
+  left: 215.25px;
+  width: 1983.62px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.mainTitle {
+  margin-bottom: 81.5px;
+  width: 1983.62px;
+  font-family: 'Chelsea Market', cursive;
+  font-size: 170px;
+  color: rgba(0, 0, 0, 1);
+  line-height: 244.5px;
+  letter-spacing: 0.015em;
+  font-weight: 400;
+}
+
+.subTitle {
+  width: 1920.27px;
+  font-family: 'Inter', sans-serif;
+  font-size: 81.5px;
+  color: rgba(0, 0, 0, 1);
+  line-height: 108.67px;
+  font-weight: 400;
+}
+
+// ============================================
+// Playground Section
+// ============================================
+.playgroundSection {
+  position: absolute;
+  top: 702.75px;
+  left: 2612.05px;
+}
+
+.playgroundHeader {
+  display: flex;
+  align-items: flex-start;
+  gap: 39.37px;
+  margin-bottom: 50px;
+
+  img {
+    width: 163.55px;
+    height: 163.55px;
+  }
+
+  h2 {
+    margin-top: 2.94px;
+    font-family: 'Inter', sans-serif;
+    font-size: 41.17px;
+    color: rgba(0, 0, 0, 1);
+    line-height: 70.58px;
+    white-space: nowrap;
+    font-weight: 400;
+  }
+}
+
+// ============================================
+// Weapon Wheel
+// ============================================
+.weaponWheel {
+  position: relative;
+  width: 509.46px;
+  height: 500.92px;
+}
+
+.weaponPosition {
+  position: absolute;
+}
+
+.weaponCircle {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circleBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.circleIcon {
+  position: absolute;
+  top: 15.6px;
+  left: 12.67px;
+  width: 87px;
+  height: 82.79px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
+.starIndicator {
+  position: absolute;
+  top: 6px;
+  left: 9px;
+  width: 36.51px;
+  height: 36.51px;
+
+  img {
+    position: absolute;
+
+    &:first-child {
+      width: 36.51px;
+      height: 36.51px;
+      top: 0;
+      left: 0;
+    }
+
+    &:last-child {
+      width: 31.09px;
+      height: 31.09px;
+      top: 2.71px;
+      left: 2.71px;
+    }
+  }
+}
+
+// ============================================
+// Step Instructions
+// ============================================
+.stepInstruction {
+  display: flex;
+  align-items: flex-start;
+  gap: 48px;
+  margin-bottom: 120px;
+}
+
+.stepNumber {
+  position: relative;
+  width: 94.11px;
+  height: 94.11px;
+  flex-shrink: 0;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+
+  span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 47.05px;
+    color: rgba(255, 255, 255, 1);
+    line-height: 70.58px;
+    font-weight: 400;
+  }
+}
+
+.stepContent {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.stepText {
+  width: 808.74px;
+  font-family: 'Inter', sans-serif;
+  font-size: 47.05px;
+  color: rgba(0, 0, 0, 1);
+  line-height: 70.58px;
+  font-weight: 400;
+  margin: 0;
+}
+
+// ============================================
+// Instructions Columns
+// ============================================
+.instructionsColumn1 {
+  position: absolute;
+  top: 408.3px;
+  left: 3351.7px;
+  width: 949.9px;
+}
+
+.instructionsColumn2 {
+  position: absolute;
+  top: 408.3px;
+  left: 4598.6px;
+  width: 949.71px;
+}
+
+// ============================================
+// Action Buttons
+// ============================================
+.actionButton {
+  height: 66px;
+  border-radius: 32.55px;
+  background-color: rgba(247, 248, 230, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttonContent {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.buttonIcon {
+  width: 46px;
+  height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    width: 46px;
+    height: 46px;
+  }
+}
+
+.buttonText {
+  font-family: 'Roboto', sans-serif;
+  font-size: 44px;
+  color: #794f27;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+// ============================================
+// Scene Buttons
+// ============================================
+.sceneButtons {
+  display: flex;
+  gap: 4px;
+}
+
+.sceneButtonsLarge {
+  display: flex;
+  gap: 8px;
+}
+
+// ============================================
+// Buttons Section
+// ============================================
+.buttonsSection {
+  position: absolute;
+  top: 1383.42px;
+  left: 4739.73px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+// ============================================
+// Icon Text Bubble
+// ============================================
+.iconTextBubble {
+  position: relative;
+  width: 213.91px;
+  height: 112.82px;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.bubbleText {
+  position: absolute;
+  top: 21.63px;
+  left: 60.46px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 48px;
+  color: rgba(238, 233, 202, 1);
+  font-weight: 500;
+  text-align: center;
+  white-space: nowrap;
+}
+
+// ============================================
+// Pointer
+// ============================================
+.pointer {
+  position: absolute;
+  width: 136.05px;
+  height: 140.9px;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+
+  &.left {
+    top: 1457.73px;
+    left: 4972.73px;
+  }
+
+  &.right {
+    top: 615.65px;
+    left: 1018.45px;
+  }
+}
+
+// ============================================
+// Scene Section
+// ============================================
+.sceneSection {
+  position: absolute;
+  top: 95px;
+  left: 7853px;
+  width: 1920px;
+  height: 1080px;
+}
+
+.sceneImage {
+  width: 1920px;
+  height: 1080px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.sceneWeaponWheel {
+  position: absolute;
+  top: 249.65px;
+  left: 612.45px;
+
+  .weaponWheel {
+    width: 509.46px;
+    height: 506.83px;
+  }
+}
+
+// Scene specific positioning for IconTextBubble
+.sceneSection {
+  .iconTextBubble {
+    position: absolute;
+    top: 488.65px;
+    left: 902.45px;
+
+    .bubbleText {
+      left: 58.46px;
+    }
+  }
+
+  .sceneButtonsLarge {
+    position: absolute;
+    top: 997.65px;
+    left: 1018.45px;
+  }
+}

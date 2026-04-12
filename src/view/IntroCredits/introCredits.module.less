@@ -1,0 +1,246 @@
+// ============================================
+// IntroCredits Page Styles
+// ============================================
+
+// Design tokens from Figma
+@color-bg-warm: rgba(255, 223, 160, 1); // #ffdfa0
+@color-bg-light: rgba(255, 247, 231, 1); // #fff7e7
+@color-text: rgba(37, 59, 82, 1); // #253b52
+@font-display: 'Chelsea Market', cursive;
+@font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  color: @color-text;
+}
+
+// ---- Hero Section ----
+.hero {
+  background: @color-bg-warm;
+  padding: 80px 140px 60px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 500px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 70%;
+    background: @color-bg-light;
+  }
+}
+
+.heroContent {
+  position: relative;
+  z-index: 1;
+}
+
+.subtitle {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-bottom: 20px;
+  font-family: @font-body;
+  font-size: 20px;
+  line-height: 1.33;
+}
+
+.starIcon {
+  width: 28px;
+  height: 27px;
+  flex-shrink: 0;
+}
+
+.title {
+  font-family: @font-display;
+  font-size: 70px;
+  line-height: 1.18;
+  letter-spacing: 1.5%;
+  font-weight: normal;
+  margin: 0;
+
+  span {
+    display: block;
+  }
+}
+
+.heroBottom {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.authorIcon {
+  width: 24px;
+  height: 23px;
+  flex-shrink: 0;
+}
+
+.authorInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.authorLabel {
+  font-family: @font-body;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.authorName {
+  font-family: @font-body;
+  font-size: 11px;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.characterIcons {
+  max-width: 600px;
+  height: auto;
+}
+
+// ---- Shared Section Styles ----
+.sectionTitle {
+  font-family: @font-display;
+  font-size: 50px;
+  font-weight: normal;
+  line-height: normal;
+  margin: 0 0 50px;
+  color: @color-text;
+}
+
+.textBlock {
+  font-family: @font-body;
+  font-size: 18px;
+  line-height: 1.6;
+  color: @color-text;
+
+  p {
+    margin: 0 0 16px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+// ---- UI Kit Tour Section ----
+.tourSection {
+  background: @color-bg-light;
+  padding: 100px 140px;
+}
+
+.tourContent {
+  font-family: @font-body;
+  font-size: 18px;
+  color: @color-text;
+}
+
+.tourLabel {
+  margin: 0 0 8px;
+}
+
+.tourGroup {
+  margin-bottom: 4px;
+}
+
+.tourHeading {
+  font-family: @font-display;
+  font-size: 18px;
+  font-weight: normal;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.tourList {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 0 20px;
+
+  li {
+    font-family: @font-body;
+    line-height: 1.6;
+  }
+}
+
+// ---- Background / Credits Section ----
+.backgroundSection {
+  background: @color-bg-light;
+  padding: 100px 140px 0;
+}
+
+.backgroundUpper {
+  padding-bottom: 100px;
+}
+
+.backgroundLower {
+  background: @color-bg-warm;
+  margin: 0 -140px;
+  padding: 100px 140px;
+}
+
+.boldLink {
+  font-weight: 700;
+  text-decoration: underline;
+  color: @color-text;
+}
+
+.creditLinks {
+  margin: 12px 0 0 20px;
+  padding: 0;
+
+  li {
+    line-height: 1.6;
+  }
+}
+
+// ---- Sources Section ----
+.sourcesSection {
+  background: @color-bg-light;
+  padding: 100px 140px;
+}
+
+.sourceHeading {
+  font-family: @font-display;
+  font-size: 18px;
+  font-weight: normal;
+  margin: 24px 0 8px;
+  line-height: 1.6;
+}
+
+.sourceList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  li {
+    line-height: 1.6;
+  }
+
+  a {
+    color: @color-text;
+    text-decoration: none;
+    word-break: break-all;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

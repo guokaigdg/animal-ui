@@ -1,0 +1,450 @@
+// DialogInstructions Styles
+// Based on Animal Crossing UI Kit - Dialog design
+
+// ============================================
+// Main Container
+// ============================================
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 10411.26px;
+  min-height: 2445px;
+  margin: 0 auto;
+  background-color: #f5f5f5;
+}
+
+// ============================================
+// Left Section (Green Panel)
+// ============================================
+.leftSection {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2350.78px;
+  height: 2445px;
+  background-color: rgba(134, 216, 134, 1);
+}
+
+.leftPanel {
+  position: absolute;
+  top: 740.28px;
+  left: 215.25px;
+  width: 1920.27px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.mainTitle {
+  margin-bottom: 81.5px;
+  width: 1920.27px;
+  font-family: 'Chelsea Market', cursive;
+  font-size: 170px;
+  color: rgba(0, 0, 0, 1);
+  line-height: 244.5px;
+  letter-spacing: 0.015em;
+  font-weight: 400;
+}
+
+.subTitle {
+  width: 1920.27px;
+  font-family: 'Inter', sans-serif;
+  font-size: 81.5px;
+  color: rgba(0, 0, 0, 1);
+  line-height: 108.67px;
+  font-weight: 400;
+}
+
+// ============================================
+// Playground Section
+// ============================================
+.playgroundSection {
+  position: absolute;
+  top: 559.67px;
+  left: 3095.53px;
+}
+
+.playgroundHeader {
+  display: flex;
+  align-items: flex-start;
+  gap: 39.37px;
+
+  img {
+    width: 163.55px;
+    height: 163.55px;
+  }
+
+  h2 {
+    margin-top: 2.94px;
+    font-family: 'Inter', sans-serif;
+    font-size: 41.17px;
+    color: rgba(0, 0, 0, 1);
+    line-height: 70.58px;
+    white-space: nowrap;
+    font-weight: 400;
+  }
+}
+
+// ============================================
+// Dialog Box Components
+// ============================================
+.dialogPlayground {
+  position: absolute;
+  top: 734.47px;
+  left: 2559.18px;
+}
+
+.dialogBoxEmpty {
+  position: relative;
+  width: 1256px;
+  height: 370px;
+}
+
+.dialogBoxBg {
+  width: 1256px;
+  height: 359.32px;
+}
+
+.continueIcon {
+  position: absolute;
+  top: 334.46px;
+  left: 602.46px;
+  width: 51.08px;
+  height: 35.54px;
+}
+
+.dialogBoxText {
+  position: absolute;
+  top: 55.53px;
+  left: 87.99px;
+  width: 642.17px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 60px;
+  color: #794f27;
+  line-height: 142.7%;
+  font-weight: 700;
+
+  div {
+    margin: 0;
+  }
+}
+
+.dialogBoxWithText {
+  position: relative;
+  width: 1256px;
+  height: 370px;
+
+  .dialogBoxText {
+    position: absolute;
+    top: 55.53px;
+    left: 87.99px;
+    width: auto;
+  }
+}
+
+.dialogBoxWithNameTag {
+  position: relative;
+  width: 1256px;
+  height: 402px;
+}
+
+.nameTagImage {
+  position: absolute;
+  top: 0;
+  left: 25.44px;
+  width: 226.66px;
+  height: 95.1px;
+}
+
+// ============================================
+// Dialog Name Tag
+// ============================================
+.dialogNameTag {
+  height: 32px;
+  border-radius: 39.81px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  margin-bottom: 60px;
+
+  &.selected {
+    background-color: rgba(255, 204, 0, 1);
+    justify-content: flex-start;
+
+    span {
+      margin-left: 20px;
+    }
+  }
+
+  &:not(.selected) {
+    span {
+      margin-right: 20px;
+    }
+  }
+
+  span {
+    font-family: 'Roboto', sans-serif;
+    font-size: 48px;
+    color: rgba(114, 93, 66, 1);
+    line-height: 91.19%;
+    font-weight: 500;
+    white-space: nowrap;
+    transform: rotate(-1.25deg);
+  }
+}
+
+// ============================================
+// Menu Box
+// ============================================
+.menuBox {
+  position: relative;
+  width: 657.28px;
+  height: 279.81px;
+}
+
+.menuBoxBg {
+  width: 100%;
+  height: 100%;
+}
+
+.menuBoxContent {
+  position: absolute;
+  top: 88px;
+  left: 78px;
+  width: 331.02px;
+  display: flex;
+  flex-direction: column;
+}
+
+// ============================================
+// Step Instructions
+// ============================================
+.stepInstruction {
+  display: flex;
+  align-items: flex-start;
+  gap: 47.04px;
+  margin-bottom: 89px;
+}
+
+.stepNumber {
+  position: relative;
+  width: 94.09px;
+  height: 94.09px;
+  flex-shrink: 0;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+
+  span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 47.04px;
+    color: rgba(255, 255, 255, 1);
+    line-height: 70.57px;
+    font-weight: 400;
+  }
+}
+
+.stepContent {
+  display: flex;
+  flex-direction: column;
+}
+
+.stepText {
+  width: 930.87px;
+  font-family: 'Inter', sans-serif;
+  font-size: 47.04px;
+  color: rgba(0, 0, 0, 1);
+  line-height: 70.57px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.stepTextContent {
+  width: 930.87px;
+
+  p {
+    margin: 0;
+
+    &:not(:last-child) {
+      padding-bottom: 29.4px;
+    }
+  }
+}
+
+.stepTextLine {
+  font-family: 'Inter', sans-serif;
+  font-size: 47.04px;
+  color: rgba(0, 0, 0, 1);
+  line-height: 70.57px;
+  font-weight: 400;
+  margin: 0;
+
+  &:not(:last-child) {
+    padding-bottom: 29.4px;
+  }
+}
+
+.stepImage {
+  margin-top: 89px;
+}
+
+// ============================================
+// Step 1 Section
+// ============================================
+.step1Section {
+  position: absolute;
+  top: 499.44px;
+  left: 3924.69px;
+  width: 1072px;
+}
+
+// ============================================
+// Step 2 Section
+// ============================================
+.step2Section {
+  position: absolute;
+  top: 490.51px;
+  left: 5250px;
+  width: 949.71px;
+
+  .menuBox {
+    margin-top: 60px;
+  }
+
+  .stepContent {
+    margin-bottom: 0;
+  }
+}
+
+.characterCursor {
+  position: absolute;
+  top: 515.41px;
+  left: 681px;
+  width: 284.82px;
+  height: 223.53px;
+}
+
+// ============================================
+// Pointer
+// ============================================
+.pointer {
+  position: absolute;
+  width: 108px;
+  height: 94px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+// ============================================
+// Scene 1 Section
+// ============================================
+.scene1Section {
+  position: absolute;
+  top: 92px;
+  left: 6469px;
+  width: 1933.26px;
+  height: 1089.07px;
+}
+
+.sceneBg {
+  width: 1933.26px;
+  height: 1089.07px;
+  object-fit: cover;
+}
+
+// ============================================
+// Scene 2 Section (with overlay)
+// ============================================
+.scene2Section {
+  position: absolute;
+  top: 92.78px;
+  left: 8478px;
+  width: 1933.26px;
+  height: 1089.07px;
+}
+
+.sceneOverlay {
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  .sceneDialogBox {
+    position: absolute;
+    top: 597.22px;
+    left: 338.94px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .dialogBoxWithNameTag {
+      position: relative;
+      width: 1256px;
+      height: 400.78px;
+
+      .dialogBoxWithText {
+        position: absolute;
+        top: 30.78px;
+        left: 0;
+
+        .dialogBoxBg {
+          width: 1257.73px;
+          height: 370.58px;
+        }
+
+        .dialogBoxText {
+          position: absolute;
+          top: 55.47px;
+          left: 87.22px;
+        }
+      }
+
+      .nameTagImage {
+        position: absolute;
+        top: 0;
+        left: 35.87px;
+        width: 205.8px;
+        height: 92.65px;
+      }
+    }
+  }
+
+  .menuBox {
+    position: absolute;
+    top: 434.22px;
+    left: 1255.94px;
+
+    .menuBoxContent {
+      .dialogNameTag {
+        &:first-child {
+          justify-content: flex-start;
+
+          span {
+            margin-left: 20px;
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
+
+  .pointer {
+    top: 497.22px;
+    left: 1228.94px;
+  }
+}
