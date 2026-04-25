@@ -8,6 +8,7 @@ import {
     sectionTitleStyle,
     tagStyle,
     demoBodyStyle,
+    labelStyle,
 } from '../../tools';
 
 const PhoneDemo: React.FC = () => (
@@ -15,9 +16,9 @@ const PhoneDemo: React.FC = () => (
         <div style={sectionTitleStyle}>
             Phone <span style={tagStyle}>手机</span>
         </div>
-        <p style={{ fontSize: 13, color: '#8a7b66', marginTop: 20, marginBottom: 30 }}>
+        <div style={labelStyle}>
             Phone 组件 — 手机界面组件。
-        </p>
+        </div>
         <div style={{ ...demoBodyStyle, transform: 'scale(0.6)', transformOrigin: 'top left', height: 473 }}>
             <Phone />
         </div>

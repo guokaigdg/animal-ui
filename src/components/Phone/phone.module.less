@@ -133,10 +133,14 @@
 }
 
 @keyframes blink {
-    0%, 50% {
+
+    0%,
+    50% {
         opacity: 1;
     }
-    51%, 100% {
+
+    51%,
+    100% {
         opacity: 0;
     }
 }
@@ -179,6 +183,9 @@
         animation: iconBounce 0.3s ease-in-out forwards;
     }
 
+    &:hover .appIconOffset {
+        animation: iconBounceOffset 0.3s ease-in-out forwards;
+    }
 }
 
 .appItemOffset {
@@ -189,24 +196,107 @@
     0% {
         transform: scale(1) rotate(0deg);
     }
+
     50% {
         transform: scale(1.2) rotate(-5deg);
     }
+
     100% {
         transform: scale(1.1) rotate(-4deg);
     }
 }
 
+@keyframes iconBounceOffset {
+    0% {
+        transform: scale(1) rotate(0deg) translateY(15px);
+    }
+
+    50% {
+        transform: scale(1.2) rotate(-5deg) translateY(15px);
+    }
+
+    100% {
+        transform: scale(1.1) rotate(-4deg) translateY(15px);
+    }
+}
+
 .appIcon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: block;
     width: 100%;
     height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70% auto;
 }
 
 .appIconOffset {
-    transform: translateY(10px);
+    transform: translateY(15px);
+}
+
+// ============================================
+// App Icons
+// ============================================
+.iconCamera {
+    background-image: url('../../assets/img/icons/icon-camera.svg');
+}
+
+.iconMiles {
+    background-image: url('../../assets/img/icons/icon-miles.svg');
+}
+
+.iconCritterpedia {
+    background-image: url('../../assets/img/icons/icon-critterpedia.svg');
+    width: 105px;
+}
+
+.iconDiy {
+    background-image: url('../../assets/img/icons/icon-diy.svg');
+}
+
+.iconDesign {
+    background-image: url('../../assets/img/icons/icon-design.svg');
+}
+
+.iconMap {
+    background-image: url('../../assets/img/icons/icon-map.svg');
+    width: 90px;
+}
+
+.iconVariant {
+    background-image: url('../../assets/img/icons/icon-variant.svg');
+    width: 80px;
+}
+
+.iconHelicopter {
+    background-image: url('../../assets/img/icons/icon-helicopter.svg');
+}
+
+.iconChat {
+    background-image: url('../../assets/img/icons/icon-chat.svg');
+}
+
+// ============================================
+// Status / Indicator Icons
+// ============================================
+.iconWifi {
+    display: inline-block;
+    width: 79px;
+    height: 29px;
+    background: url('../../assets/img/icons/wifi.svg') center / contain no-repeat;
+}
+
+.iconLocation {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    background: url('../../assets/img/icons/location.svg') center / contain no-repeat;
+}
+
+.iconPage {
+    display: inline-block;
+    width: 65px;
+    height: 32px;
+    background: url('../../assets/img/icons/page.svg') center / contain no-repeat;
 }
 
 .badge {

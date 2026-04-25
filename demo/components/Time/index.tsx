@@ -1,15 +1,15 @@
 import React from 'react';
 import { Time as TimeComponent } from '../../../src';
-import { CodeBlock, ApiTable, ApiRow, sectionStyle, sectionTitleStyle, tagStyle, demoBodyStyle } from '../../tools';
+import { CodeBlock, ApiTable, ApiRow, sectionStyle, sectionTitleStyle, tagStyle, demoBodyStyle, labelStyle } from '../../tools';
 
 const TimeDemo: React.FC = () => (
     <div style={sectionStyle}>
         <div style={sectionTitleStyle}>
             Time <span style={tagStyle}>时间</span>
         </div>
-        <p style={{ fontSize: 13, color: '#8a7b66', marginTop: 20, marginBottom: 30 }}>
+        <div style={labelStyle}>
             Time 组件 — 动森经典 HUD 风格的时间显示组件，实时更新时间，支持星期、日期和时间显示。
-        </p>
+        </div>  
         <div style={demoBodyStyle}>
             <TimeComponent />
         </div>
