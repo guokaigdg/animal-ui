@@ -1,0 +1,31 @@
+.container {
+    height: 200px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    background: black;
+    overflow: hidden;
+}
+
+.container :global(.illustration) {
+    max-height: 200px;
+    max-width: 180px;
+    width: 100%;
+}
+
+.fadeCircle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    background: white;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 1;
+    opacity: 0;
+}
